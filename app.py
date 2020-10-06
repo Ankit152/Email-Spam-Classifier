@@ -37,8 +37,8 @@ def index():
     return render_template('index.html')
 
 
-@app.route('/predict',methods=['POST'])
-def predict():
+@app.route('/result',methods=['POST'])
+def result():
     if request.method=='POST':
         txt=request.form['message']
         txt=clean_html(txt)

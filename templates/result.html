@@ -5,9 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Sedgwick+Ave&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/styles.css')}}">
     <title>Result</title>
 </head>
 <body>
-    
+    <header>
+        <div id="brand_name">
+            <h2>Spam Classifier Web Application</h2>
+        </div>
+    </header>
+    <p>Result!!!</p>
+    <div class="results">
+        {% if prediction=="spam"%}
+            <h3>Sorry. But its a Spam!!!</h3>
+        {% elif prediction=="ham"%}
+            <h3>Hurray. Its not a Spam!!!</h3>
+        {% endif %}
+    </div>
 </body>
 </html>

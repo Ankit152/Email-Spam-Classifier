@@ -8,6 +8,18 @@
     <title>Spam Classifier</title>
 </head>
 <body>
-    <h2>Spam Classifier Web Application</h2>
+    <header>
+        <div class="brand_name">
+            <h2>Spam Classifier Web Application</h2>
+        </div>
+    </header>
+    <div class="ml-model">
+        <form action="{{url_for('predict')}}" method="POST">
+            <p>Enter Your Message Here</p>
+            <textarea name="message" rows="8" cols="50"></textarea>
+            <br>
+            <input type="submit" class="btn-inf" value="Predict">
+        </form>
+    </div>
 </body>
 </html>

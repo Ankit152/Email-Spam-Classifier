@@ -1,7 +1,23 @@
-input{
+.btn-inf{
     padding:4px;
-    margin: 10px
+    margin: 10px;
+    border-radius: 6px;
+    color: #218F76;
+}
+.btn-inf:hover{
+    color: #53E0BC;
+}
+h2{
+    color: #AE1438;
+    text-align: center;
+    padding: 10px;
+    margin: 20px;
+}
+.brand_name{
+    background-color:#2B2B52;
+    align-content: center;
 }
 p{
     text-align: center;
+    color: blue;
 }

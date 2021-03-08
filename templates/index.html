@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Sedgwick+Ave&display=swap" rel="stylesheet">
     <title>Spam Classifier</title>
-    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
 <body>
     <header>
-        <div class="brand_name">
-            <h2>Spam Classifier Web Application</h2>
+        <div class="container">
+            <div id="brandname">
+                Machine Learning App with Flask
+            </div>
+            <h2>Spam Detector For SMS Messages</h2>
         </div>
     </header>
     <div class="ml-model">
-        <form action="{{url_for('result')}}" method="POST">
+        <form action="{{ url_for('predict')}}" method="POST">
             <p>Enter Your Message Here</p>
-            <textarea name="message" rows="8" cols="50"></textarea>
-            <br>
-            <input type="submit" class="btn-inf" value="Predict">
+            <!-- <input type="text" name="comment"/> -->
+            <textarea name="message" rows="4" cols="50"></textarea>
+            <br/>
+            <input type="submit" class="btn-info" value="predict">
         </form>
     </div>
 </body>

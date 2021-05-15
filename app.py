@@ -15,8 +15,9 @@ def index():
 def predict():
     # loading the model from the disk
     filename='model.pkl'
+    cvfile='cv.pkl'
     clf=joblib.load(filename)
-    cv=CountVectorizer()
+    cv=joblib.load(cvfile)
     if request.method=='POST':
         txt=request.form['message']
         clean=re.compile('<.*?>')

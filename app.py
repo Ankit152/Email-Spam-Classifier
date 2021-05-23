@@ -31,8 +31,13 @@ def predict():
         txt=[txt]
         txt=cv.transform(txt).toarray()
         mypred=clf.predict(txt)
+        res=None
+        if mypred[0]=='ham':
+            res=0
+        else:
+            res=1
     
-    return render_template('result.html',prediction=mypred)
+    return render_template('result.html',prediction=res)
 
 
 

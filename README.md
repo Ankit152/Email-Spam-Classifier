@@ -10,7 +10,7 @@ The SMS Spam Collection is a set of SMS tagged messages that have been collected
 
 Based on the data point we have to classify whether it is a spam or ham. 
 
-## Methodology
+## Methodology 🛠️
 
 1. A **Support Vector Machine(SVM)** model **hyperparameter tuned using GridSearchCV**.
 2. A Web App using: **HTML**, **CSS**, **Flask** and **Python**.

@@ -1,5 +1,4 @@
 from flask import  Flask,render_template,url_for,request
-import pickle
 from sklearn.feature_extraction.text import CountVectorizer
 import joblib
 import re
